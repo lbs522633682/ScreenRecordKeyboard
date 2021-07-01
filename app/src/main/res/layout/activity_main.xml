@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="请输入重复次数(6)" />
+
+    <EditText
+        android:id="@+id/et_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="游戏名称(星光大冒险)" />
+
+    <EditText
+        android:id="@+id/et_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="游戏名首字母大写（XGDMX）" />
+
+    <EditText
+        android:id="@+id/et_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入省份（例如湖北省：湖北）" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/accessibility_desc" />
+
+</LinearLayout>

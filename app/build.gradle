@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.skymobi.game"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug{
+            // 自定义gradle常量
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+            buildConfigField("String", "LOG_TAG", "\"quick\"")
+            buildConfigField("String", "SP_NAME", "\"Config\"")
+        }
+        release {
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            buildConfigField("String", "LOG_TAG", "\"quick\"")
+            buildConfigField("String", "SP_NAME", "\"Config\"")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+}

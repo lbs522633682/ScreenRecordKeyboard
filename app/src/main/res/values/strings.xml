@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MiguQuickGame</string>
+
+    <string name="accessibility_service_description">MiguQuickGame</string>
+    <string name="accessibility_service_label">MiguQuickGame</string>
+
+    <string name="accessibility_desc">1. 请打开辅助服务，如果拒绝则有可能导致功能不可用 \n 2. 请预先设置循环次数，游戏名称，以及游戏名称首字母大写 \n 3. 请点击保存即可 \n 4. 在需要录制操作前点击左上角的开始录制，否则不进行录制 \n 5. 录制结束请点击结束录制即可,将SDk录制结束请点击结束录制即可,将SDcard/MiguGameTaskInfo.txt取出 \n 6. 本次录制仅录制键盘操作，点击操作不在录制内</string>
+
+
+</resources>
